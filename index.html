@@ -3,111 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Proyecto Académico | José Manuel Martínez</title>
-  <meta name="description" content="Página web académica con estilo corporativo." />
+  <title>Proyecto Académico</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Música (YouTube) - se activa con botón por restricciones del navegador -->
+  <!-- 🎸 Música en autoplay -->
   <iframe
-    id="musicFrame"
     width="0"
     height="0"
-    src=""
-    title="Highway to Hell - AC/DC"
+    src="https://www.youtube.com/embed/l482T0yNkeo?autoplay=1"
     frameborder="0"
     allow="autoplay"
     allowfullscreen>
   </iframe>
 
-  <!-- Barra superior corporativa -->
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div>
-          <div class="brand-title">Proyecto Académico</div>
-          <div class="brand-subtitle">Universidad Tangamanga Industrias</div>
-        </div>
-      </div>
-
-      <button class="btn" type="button" onclick="playMusic()">
-        ▶ Reproducir música
-      </button>
+  <header class="container header">
+    <div>
+      <h1>José Manuel Martínez</h1>
+      <p>ID: 423181</p>
+      <p>Maestría en Administración de Procesos Industriales</p>
+      <p>Universidad Tangamanga Industrias</p>
     </div>
   </header>
 
-  <!-- Hero corporativo con tus datos (NO se desvanece) -->
   <main class="container">
-    <section class="hero card">
-      <div class="hero-left">
-        <h1 class="hero-title">José Manuel Martínez</h1>
-        <p class="hero-meta">
-          <span class="pill"><strong>ID:</strong> 423181</span>
-          <span class="pill"><strong>Carrera:</strong> Maestría en Administración de Procesos Industriales</span>
-        </p>
-        <p class="hero-text">
-          Esta página fue desarrollada como parte de una actividad académica para demostrar el uso básico de
-          HTML y CSS con un estilo corporativo.
-        </p>
-      </div>
-
-      <div class="hero-right">
-        <div class="info-box">
-          <div class="info-label">Universidad</div>
-          <div class="info-value">Universidad Tangamanga Industrias</div>
-
-          <div class="info-label mt8">Tema</div>
-          <div class="info-value">Sitio web básico (HTML + CSS)</div>
-
-          <div class="info-label mt8">Música</div>
-          <div class="info-value">“Highway to Hell” (YouTube embed)</div>
-        </div>
-      </div>
+    <section class="card">
+      <h2>Proyecto Académico</h2>
+      <p>
+        Esta página fue desarrollada como parte de una actividad escolar
+        utilizando HTML y CSS.
+      </p>
     </section>
-
-    <section class="grid">
-      <article class="card">
-        <h2>Objetivo</h2>
-        <p class="muted">
-          Mostrar estructura: encabezado, secciones, tarjetas, tipografía consistente y diseño responsivo.
-        </p>
-        <ul class="list">
-          <li>Organización clara del contenido</li>
-          <li>Estilo uniforme tipo “corporativo”</li>
-          <li>Compatible con móvil</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>Contenido</h2>
-        <p class="muted">
-          Puedes agregar más secciones según tu tarea (marco teórico, conclusiones, referencias, etc.).
-        </p>
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">Diseño responsivo</span>
-          <span class="tag">Entrega académica</span>
-        </div>
-      </article>
-    </section>
-
-    <footer class="footer">
-      <p>© <span id="year"></span> José Manuel Martínez • ID 423181</p>
-    </footer>
   </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> José Manuel Martínez</p>
+  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    function playMusic(){
-      // Video oficial/popular en YouTube (puedes cambiar el ID si quieres otro)
-      document.getElementById("musicFrame").src =
-        "https://www.youtube.com/embed/l482T0yNkeo?autoplay=1";
-    }
   </script>
 
 </body>
